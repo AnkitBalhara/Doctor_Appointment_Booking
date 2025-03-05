@@ -1,3 +1,6 @@
+
+
+
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home.jsx";
@@ -8,11 +11,13 @@ import About from "./pages/About.jsx";
 import MyProfile from "./pages/MyProfile.jsx";
 import MyAppointment from "./pages/MyAppointment.jsx";
 import Appointement from "./pages/MyAppointment.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
   return (
     <div>
       {/* Jai Shree Ram */}
+      <Navbar/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
