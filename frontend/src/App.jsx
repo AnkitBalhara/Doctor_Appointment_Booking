@@ -12,10 +12,9 @@ import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
   return (
-    <div>
+    <div className="mx-4 sm:mx-[10%]">
       {/* Jai Shree Ram */}
       <Navbar/>
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -27,7 +26,6 @@ const App = () => {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/doctors/:speciality" element={<Doctors />} />
         </Routes>
-      </BrowserRouter>
     </div>
   );
 };
